@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "./Link/Link";
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
+import "./Nav.css";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -17,8 +18,8 @@ const Nav = () => {
       </a>
 
       <ul
-        className={`md:flex gap-5 md:relative absolute duration-500 ease-in ${
-          open ? "top-16 md:top-0" : "top-[-120px] md:top-0"
+        className={`md:flex gap-5 md:relative absolute duration-500 ease-in mbMenu ${
+          open ? "top-16 md:top-0" : "top-[-100%] md:top-0"
         }`}
       >
         {routes.map((link) => (
